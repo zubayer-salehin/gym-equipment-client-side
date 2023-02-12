@@ -8,7 +8,7 @@ const ForgotPassword = () => {
         e.preventDefault();
         const email = e.target.email.value;
 
-        fetch(`https://gym-equipment-server-side.vercel.app/user/forgetPasswordEmail/${email}`)
+        fetch(`https://gym-equipment-server-side-production.up.railway.app/user/forgetPasswordEmail/${email}`)
             .then(res => res.json())
             .then(data => {
                 if (data.status === "success") {

@@ -8,7 +8,7 @@ const UserProfile = () => {
 
     useEffect(() => {
         setLoading(true);
-        fetch("https://gym-equipment-server-side.vercel.app/user")
+        fetch("https://gym-equipment-server-side-production.up.railway.app/user")
             .then(res => res.json())
             .then(data => setUsers(data?.data))
         setLoading(false);
@@ -17,7 +17,7 @@ const UserProfile = () => {
     return (loading ? <Loading></Loading> :
         <div className='pt-10 pb-20'>
             <div className="flex justify-center">
-                <div className='w-7/12'>
+                <div className='w-11/12 sm:w-7/12'>
                     <h2 className='text-3xl sm:text-4xl font-bold mb-10 text-center'>User Profile</h2>
                     <div className="p-3 border shadow-lg">
                         <div className="overflow-x-auto">

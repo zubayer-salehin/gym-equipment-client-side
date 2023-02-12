@@ -10,7 +10,7 @@ const PrivateRoute = ({ children }) => {
 
     useEffect(() => {
         setLoading(true)
-        fetch("https://gym-equipment-server-side.vercel.app/user/userVerify", {
+        fetch("https://gym-equipment-server-side-production.up.railway.app/user/userVerify", {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

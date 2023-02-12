@@ -15,7 +15,7 @@ const Login = () => {
             password: e.target.password.value
         }
 
-        fetch("https://gym-equipment-server-side.vercel.app/user/login", {
+        fetch("https://gym-equipment-server-side-production.up.railway.app/user/login", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -12,7 +12,7 @@ const ResetPassword = () => {
         e.preventDefault();
         const password = e.target.password.value;
 
-        fetch(`https://gym-equipment-server-side.vercel.app/user/resetPassword/${id}`, {
+        fetch(`https://gym-equipment-server-side-production.up.railway.app/user/resetPassword/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json'

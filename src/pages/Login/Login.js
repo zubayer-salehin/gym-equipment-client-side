@@ -15,7 +15,7 @@ const Login = () => {
             password: e.target.password.value
         }
 
-        fetch("https://gym-equipment-server-side-production.up.railway.app/user/login", {
+        fetch(`${process.env.REACT_APP_SERVER_SIDE_URL}/user/login`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

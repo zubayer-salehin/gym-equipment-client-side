@@ -10,7 +10,7 @@ const PrivateRoute = ({ children }) => {
 
     useEffect(() => {
         setLoading(true)
-        fetch("https://gym-equipment-server-side-production.up.railway.app/user/userVerify", {
+        fetch(`${process.env.REACT_APP_SERVER_SIDE_URL}/user/userVerify`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

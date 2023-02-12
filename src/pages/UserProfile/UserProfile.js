@@ -8,7 +8,7 @@ const UserProfile = () => {
 
     useEffect(() => {
         setLoading(true);
-        fetch("https://gym-equipment-server-side-production.up.railway.app/user")
+        fetch(`${process.env.REACT_APP_SERVER_SIDE_URL}/user`)
             .then(res => res.json())
             .then(data => setUsers(data?.data))
         setLoading(false);

@@ -8,7 +8,7 @@ const ForgotPassword = () => {
         e.preventDefault();
         const email = e.target.email.value;
 
-        fetch(`https://gym-equipment-server-side-production.up.railway.app/user/forgetPasswordEmail/${email}`)
+        fetch(`${process.env.REACT_APP_SERVER_SIDE_URL}/user/forgetPasswordEmail/${email}`)
             .then(res => res.json())
             .then(data => {
                 if (data.status === "success") {

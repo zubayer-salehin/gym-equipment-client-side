@@ -5,7 +5,7 @@ export const USER_CONTEXT = createContext();
 
 const UserProvider = ({ children }) => {
 
-    const [refetch, setRefetch] = useState(false);
+    const [refetch, setRefetch] = useState(0);
     const [token, setToken] = useState("");
 
     useEffect(() => {

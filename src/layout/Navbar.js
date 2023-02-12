@@ -48,13 +48,16 @@ const Navbar = () => {
                             <a href="#home" className="text-primary font-semibold block mt-4 lg:inline-block lg:mt-0 mr-6 cursor-pointer">
                                 Feature
                             </a>
-                            <a href="#home" className="text-primary font-semibold block mt-4 lg:inline-block lg:mt-0">
+                            <a href="#home" className="text-primary font-semibold block mt-4 lg:inline-block mr-6 lg:mt-0">
                                 Contacts
                             </a>
+                            {token &&
+                                <Link to="/userProfile" className='text-primary font-semibold block mt-4 lg:inline-block lg:mt-0'>All Users</Link>
+                            }
                         </div>
                         <div className='flex items-center gap-5 mt-4 sm:mt-0'>
                             <BiSearch className='cursor-pointer' />
-                            <Link to="/userProfile"><FaRegUser className='cursor-pointer' /></Link>
+                            <FaRegUser className='cursor-pointer' />
                             <FiShoppingBag className='cursor-pointer' />
                             {!token ?
                                 <Link to="/login"><button className='bg-secondary py-3 px-6 text-white rounded-sm'>Login</button></Link>

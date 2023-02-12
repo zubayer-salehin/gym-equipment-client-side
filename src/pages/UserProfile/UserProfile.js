@@ -8,7 +8,13 @@ const UserProfile = () => {
 
     useEffect(() => {
         setLoading(true);
-        fetch(`${process.env.REACT_APP_SERVER_SIDE_URL}/user`)
+        fetch(`${process.env.REACT_APP_SERVER_SIDE_URL}/user`, {
+            method: 'GET',
+            headers: {
+                'Content-Type': 'application/json',
+                'authorization': `bearer ${localStorage.getItem("accessToken")}`
+            }
+        })
             .then(res => res.json())
             .then(data => setUsers(data?.data))
         setLoading(false);

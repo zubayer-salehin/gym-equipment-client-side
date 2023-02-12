@@ -1,0 +1,117 @@
+/* Container CSS Start */
+
+.customContainer {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen {
+
+    @media (max-width: 575px) {
+        .customContainer {
+            width: 90%;
+        }
+    }
+
+    @media (min-width: 576px) {
+        .customContainer {
+            max-width: 520px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .customContainer {
+            max-width: 720px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .customContainer {
+            max-width: 960px;
+        }
+    }
+
+    @media (min-width: 1280px) {
+        .customContainer {
+            max-width: 1225px;
+        }
+    }
+}
+
+/* Container CSS End */
+
+
+/* Banner CSS Start */
+
+.bannerBtn {
+    padding: 20px 45px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 48px;
+}
+
+.banngerBg {
+    background: rgba(0, 0, 0, 0.25)
+}
+
+.smallTitle {
+    font-family: "Homemade Apple";
+}
+
+/* Banner CSS Start */
+
+
+/* Footer CSS Start */
+
+.footerTopBorder {
+    border-top: 0.6px solid rgba(255, 255, 255, 0.2);
+}
+
+.footerLinkColor {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.socialLinkBorder {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.footerMenu>li {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 4px;
+}
+
+.footerInput {
+    font-size: 13px;
+    width: 100%;
+    padding: 10px 8px 10px 15px;
+    outline: none;
+    color: white;
+    background-color: #040F16;
+}
+
+/* Footer CSS End */
+
+
+/* Input Design CSS Start */
+
+.authLabel {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.authInput {
+    width: 100%;
+    padding: 8px 16px;
+    border: 1.5px solid #ddd;
+    border-radius: 2px;
+    font-weight: 600;
+    outline: none;
+}
+
+.authInput:focus {
+    border: 1.5px solid #2554D7;
+}
+
+/* Input Design CSS End */

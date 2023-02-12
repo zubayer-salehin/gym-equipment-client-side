@@ -1,0 +1,30 @@
+[
+    {
+        "id":"1",
+        "image": "https://i.ibb.co/QDfFn4t/shop1.png",
+        "name": "Rogue HG 2.0 Bumper Plates",
+        "prePrice": "$409",
+        "newPrice": "$300"
+    },
+    {
+        "id":"2",
+        "image": "https://i.ibb.co/jfYQF8J/shop2.png",
+        "name": "The Ohio Bar - Cerakote",
+        "prePrice": "",
+        "newPrice": "$300"
+    },
+    {
+        "id":"3",
+        "image": "https://i.ibb.co/BqfptPN/shop3.png",
+        "name": "Rogue Adjustable Bench 3.0",
+        "prePrice": "",
+        "newPrice": "$300"
+    },
+    {
+        "id":"4",
+        "image": "https://i.ibb.co/pzJpz3X/shop4.png",
+        "name": "Rogue USA Nylon Lifting Belt",
+        "prePrice": "$50",
+        "newPrice": "$30"
+    }
+]
